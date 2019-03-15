@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="instruction">这是游戏说明区域</div>
+    <!--my game area-->
+    <div class="square" id="local">
+        <div class="title">my game area</div>
+        <div class="game" id="local_game"></div>
+        <div class="next" id="local_next"></div>
+        <div class="info">
+            <div>已用时:<span id="local_time">0</span>s</div>
+            <div>已得分:<span id="local_score">0</span>分</div>
+            <div id="local_result"></div>
+        </div>
+    </div>
+    <!--remote game area-->
+
+    <div class="square" id="remote">
+        <div class="title">my game area</div>
+        <div class="game" id="remote_game"></div>
+        <div class="next" id="remote_next"></div>
+        <div class="info">
+            <div>已用时:<span id="remote_time">0</span>s</div>
+            <div>已得分:<span id="remote_score">0</span>分</div>
+            <div id="remote_result"></div>
+            <button id="left">left</button><br>
+            <button id="right">right</button><br>
+            <button id="down">down</button><br>
+            <button id="fall">fall</button><br>
+            <button id="roate">roate</button><br>
+            <button id="addlines">addlines</button><br>
+            <button id="left">left</button><br>
+            <button id="left">left</button><br>
+            <button id="left">left</button><br>
+            <button id="left">left</button><br>
+            <button id="left">left</button><br>
+            <!--this.init = init;
+            this.down = down;
+            this.left = left;
+            this.right = right;
+            this.rotate = rotate;
+            this.fixed = fixed;
+            this.performNext = performNext;
+            this.checkClear = checkClear;
+            this.checkGameOver = checkGameOver;
+            this.setTime = setTime;
+            this.addScore = addScore;
+            this.gameOver = gameOver;
+            this.addlines = addlines;
+            this.addbottomlines = addbottomlines;
+            this.fall = function () { while (down()) { } };-->
+        </div>
+    </div>
+
+
+    <script src="./js/square.js"></script>
+    <script src="./js/squareFactory.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/local.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/remote.js"></script>
+</body>
+
+</html>
